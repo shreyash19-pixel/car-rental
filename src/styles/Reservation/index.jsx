@@ -3,14 +3,20 @@ import styled from "styled-components";
 export const ReservationContainer = styled.div`
     width: 100%;
     max-width: 800px;
-    position: absolute;
-    top:-115px;
-    z-index: 10;
-    border: 2px solid white;
-    max-height: 630px;
-    overflow-y: auto;
+    height: 100vh;
+    z-index: 99;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white; 
+    overflow-y: scroll;
     background-color: white;
-    padding-bottom: 20px;
+
+    @media (max-width: 800px)
+    {
+        top: 50%;
+    }
 `
 
 export const ReservationWrap = styled.div`
@@ -30,6 +36,11 @@ export const ReservationHeading = styled.div`
     color: white;
     font-weight: 600;
     font-size: 25px;
+
+    @media (max-width: 480px)
+    {
+        font-size: 18px;
+    }
 `
 export const CrossWrap = styled.div`
     color: white;

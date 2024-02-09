@@ -29,7 +29,6 @@ const Hero = () => {
                     <HeroImg src = {HeroCarImg} />
                 </HeroImgWrap>
             </HeroImgContainer>
-   
         </HeroWrap>
     </HeroContainer>
   )

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
+
 export const NavBarWrap = styled.div`
     width: 100%;
     padding: 25px 30px;
     position: relative;
-    z-index: -2;
+  
 
     @media (max-width: 768px)
     {
@@ -18,6 +19,7 @@ export const NavBar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99999;
 `
 
 export const LogoWrap = styled.div`
@@ -122,7 +124,7 @@ export const ResponsiveNav = styled.div`
         top: 0;
         left:0;
         font-size: 22px;
-        z-index: 3;
+        z-index: 99999;
 
     }
 `
@@ -131,7 +133,7 @@ export const HeroBackgroundImgWrap = styled.div`
     position: absolute;
     right: 0px;
     top:0px;
-    z-index: -1;
+    z-index:  -1;
 
     @media (max-width: 800px)
     {

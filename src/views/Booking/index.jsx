@@ -173,7 +173,7 @@ const Booking = () => {
                 </SearchBtnWrap>
             </BookingInfoWrap>
         </BookingWrap>
-        {reserve && (<Reservation/>)}
+        {reserve && (<Reservation />)}
     </BookingContainer>
   )
 }

@@ -21,7 +21,7 @@ export const HeroInfoWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    z-index: 5;
+    z-index: 3;
 
     @media (max-width: 800px)
     {

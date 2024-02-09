@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import { HeroBackgroundImg, HeroBackgroundImgWrap, AuthenticationWrap, LogoWrap, NavBar, NavBarWrap, NavLinks, NavLinksWrap, SignUpWrap,Logo, Hamburger, ResponsiveNav, Cross } from '../../styles/Nav'
 import CarRentalLogo from '../../assets/logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import HeroBackImg from '../../assets/hero-backimg.png'
+
+
 
 const Nav = () => {
 
@@ -50,10 +52,10 @@ const Nav = () => {
                 </Cross>
             </ResponsiveNav>)
             }
-            <HeroBackgroundImgWrap>
+        </NavBar>
+        <HeroBackgroundImgWrap>
                 <HeroBackgroundImg src = {HeroBackImg} />
             </HeroBackgroundImgWrap>
-        </NavBar>
     </NavBarWrap>
   )
 }

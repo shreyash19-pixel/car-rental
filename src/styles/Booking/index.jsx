@@ -3,11 +3,12 @@ import BookingImg from '../../assets/booking-back-img.png'
 
 export const BookingContainer = styled.div`
     width: 100%;
+    height: 100%;
     padding: 35px 40px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 4;
     @media (max-width: 460px)
     {
         padding-inline: 25px;
