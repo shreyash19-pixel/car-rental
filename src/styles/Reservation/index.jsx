@@ -4,6 +4,7 @@ export const ReservationContainer = styled.div`
     width: 100%;
     max-width: 800px;
     height: 100vh;
+    height: 100dvh;
     z-index: 99;
     position: fixed;
     top: 54%;

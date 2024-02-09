@@ -152,4 +152,5 @@ export const DateInput = styled.input`
     color: #ABAEC1;
     border: 1px solid #ABAEC1;
     font-size: 16px;
+    width: 100%;
 `
