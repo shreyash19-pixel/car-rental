@@ -4,7 +4,7 @@ export const NavBarWrap = styled.div`
     width: 100%;
     padding: 25px 30px;
     position: relative;
-    z-index: 6;
+    z-index: -2;
 
     @media (max-width: 768px)
     {
@@ -76,7 +76,7 @@ export const SignUpWrap = styled.a`
     padding: ${(props) => (props.register ? "12px 30px" : "0px")};
     border-radius: ${(props) => (props.register ? "5px" : "0px")};
     font-weight: 500;
-    box-shadow:  ${(props) => (props.register ? "2px 4px 5px rgba(0, 0, 0, 0.3);" : "none")}; 
+    box-shadow:  ${(props) => (props.register ? "0 10px 15px #c496e7;" : "none")}; 
 `
 
 export const Hamburger = styled.div`
@@ -125,4 +125,20 @@ export const ResponsiveNav = styled.div`
         z-index: 3;
 
     }
+`
+
+export const HeroBackgroundImgWrap = styled.div`
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index: -1;
+
+    @media (max-width: 800px)
+    {
+        display: none;
+    }
+`
+
+export const HeroBackgroundImg = styled.img`
+    
 `

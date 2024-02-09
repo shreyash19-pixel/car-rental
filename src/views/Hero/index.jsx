@@ -1,7 +1,7 @@
 import React from 'react'
-import { HeroBackgroundImg, HeroBackgroundImgWrap, HeroContainer, HeroDesc, HeroDescWrap, HeroHeading, HeroHeadingSpan, HeroHeadingWrap, HeroImg, HeroImgContainer, HeroImgWrap, HeroInfoWrap, HeroLinks, HeroLinksWrap, HeroWrap, PlanTrip } from '../../styles/Hero'
+import {HeroContainer, HeroDesc, HeroDescWrap, HeroHeading, HeroHeadingSpan, HeroHeadingWrap, HeroImg, HeroImgContainer, HeroImgWrap, HeroInfoWrap, HeroLinks, HeroLinksWrap, HeroWrap, PlanTrip } from '../../styles/Hero'
 import HeroCarImg from '../../assets/hero-car-img.webp'
-import HeroBackImg from '../../assets/hero-backimg.png'
+
 
 const Hero = () => {
   return (
@@ -29,9 +29,7 @@ const Hero = () => {
                     <HeroImg src = {HeroCarImg} />
                 </HeroImgWrap>
             </HeroImgContainer>
-            <HeroBackgroundImgWrap>
-                <HeroBackgroundImg src = {HeroBackImg} />
-            </HeroBackgroundImgWrap>
+   
         </HeroWrap>
     </HeroContainer>
   )

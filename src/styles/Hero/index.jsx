@@ -10,7 +10,6 @@ export const HeroWrap = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    /* justify-content: space-between; */
     gap: 15px;
     position: relative;
 `
@@ -22,7 +21,7 @@ export const HeroInfoWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    z-index: 3;
+    z-index: 5;
 
     @media (max-width: 800px)
     {
@@ -83,7 +82,7 @@ export const HeroLinks = styled.a`
     padding: 20px 35px;
     border-radius: 5px;
     font-size: 18px;
-    box-shadow:  ${(props) => (props.book ? "2px 4px 5px rgba(0, 0, 0, 0.3);" : "none")}; 
+    box-shadow:  ${(props) => (props.book ? "0 10px 15px #c496e7;" : "none")}; 
 
     @media (max-width: 450px)
     {
@@ -116,17 +115,3 @@ export const HeroImg = styled.img`
     width: 100%;
 `
 
-export const HeroBackgroundImgWrap = styled.div`
-    position: absolute;
-    right: -35px;
-    top:-155px;
-
-    @media (max-width: 800px)
-    {
-        display: none;
-    }
-`
-
-export const HeroBackgroundImg = styled.img`
-    
-`
