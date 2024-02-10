@@ -5,6 +5,9 @@ import Booking from '../../views/Booking'
 import AppContext from '../../utils/AppContext'
 import Steps from '../../views/Steps'
 import Models from '../../views/Models'
+import Advertisement from '../../components/Advertisement'
+import About from '../../views/About'
+import Testimonial from '../../views/Testimonial'
 
 
 
@@ -21,6 +24,9 @@ const Home = () => {
         <Booking/>
         <Steps />
         <Models />
+        <Advertisement />
+        <About />
+        <Testimonial />
   </div>
    
   )

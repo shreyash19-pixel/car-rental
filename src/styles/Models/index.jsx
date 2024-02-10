@@ -19,7 +19,7 @@ export const ModelsWrap = styled.div`
 `
 export const ModelsHeadingDescWrap = styled.div`
     width: 100%;
-    max-width: 500px;
+    max-width: 650px;
 `
 
 export const ViewCarsWrap = styled.div`
@@ -31,6 +31,7 @@ export const ViewCarsWrap = styled.div`
     @media (max-width: 1050px)
     {
         flex-direction: column;
+        gap: 70px;
     }
 `
 
@@ -65,7 +66,7 @@ export const ModelImgAndDetailsWrap = styled.div`
     @media (max-width: 700px)
     {
         flex-direction: column;
-        gap: 60px;
+        gap: 90px;
     }
 `
 

@@ -24,7 +24,7 @@ export const StepsHeadingWrap = styled.div`
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    gap: 25px;
 `
 
 export const StepsHeading1 = styled.h2`
@@ -36,6 +36,7 @@ export const StepsHeading1 = styled.h2`
 
 export const StepsHeading2 = styled.h1`
     font-size: 45px;
+    line-height: 1;
     @media (max-width: 420px)
         {
             font-size: 30px;;
@@ -73,7 +74,7 @@ export const StepsInfoImgWrap = styled.div`
 `
 
 export const StepsInfoImg = styled.img`
-    
+
 `
 
 export const StepsInfoDescWrap = styled.div`
@@ -88,6 +89,7 @@ export const StepsInfoDescWrap = styled.div`
 export const StepsInfoDescTitle = styled.h2`
     text-align: center;
 `
+
 
 export const StepsInfoDesc = styled.p`
     color: grey;
