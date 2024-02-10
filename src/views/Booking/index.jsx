@@ -13,6 +13,7 @@ const Booking = () => {
         {title : "Audi A1S-Line"},
         {title : "VW Golf 6"},
         {title : "Toyota Camry"},
+        {title : "BMW 320 ModernLine"},
         {title : "Mercedes-Benz GLK"},
         {title : "VW Passat CC"},
     ]

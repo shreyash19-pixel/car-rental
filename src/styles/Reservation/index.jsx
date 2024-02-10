@@ -64,12 +64,22 @@ export const GuideLinesWrap = styled.div`
 export const GuidelinesHeading = styled.h2`
     font-size: 20px;
     color : #6C22A6;
+
+    @media (max-width: 520px)
+    {
+        font-size: 15px;
+    }
     
 `
 
 export const GuideLinesDes = styled.p`
     color: grey;
     font-weight: 500;
+
+    @media (max-width: 520px)
+    {
+        font-size: 13px;
+    }
 `
 
 export const ExistingInfoWrap = styled.div`
@@ -89,12 +99,6 @@ export const ExistingInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    @media (max-width: 650px)
-    {
-        text-align: center;
-        align-items: center;
-    }
 `
 
 export const ExistingInfoHeading = styled.h3`

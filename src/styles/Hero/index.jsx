@@ -45,7 +45,12 @@ export const HeroHeading = styled.h1`
 
     @media (max-width: 420px)
     {
-       font-size: 45px;
+       font-size: 40px;
+    }
+
+    @media (max-width: 375px)
+    {
+        font-size: 35px;
     }
 `
 
@@ -60,6 +65,11 @@ export const HeroDescWrap = styled.div`
 
 export const HeroDesc = styled.p`
     color: #706F7B;
+
+    @media (max-width: 375px)
+    {
+        font-size: 13px;
+    }
 `
 
 export const HeroLinksWrap = styled.div`
@@ -88,6 +98,12 @@ export const HeroLinks = styled.a`
     {
         width: 100%;
         max-width: 230px;
+    }
+
+    @media (max-width: 420px)
+    {
+       font-size: 14px;
+       padding: 16px 30px;
     }
 `
 

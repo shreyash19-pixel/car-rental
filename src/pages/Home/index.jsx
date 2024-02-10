@@ -3,6 +3,9 @@ import Nav from '../../components/Nav'
 import Hero from '../../views/Hero'
 import Booking from '../../views/Booking'
 import AppContext from '../../utils/AppContext'
+import Steps from '../../views/Steps'
+import Models from '../../views/Models'
+
 
 
 const Home = () => {
@@ -16,6 +19,8 @@ const Home = () => {
         <Nav />
         <Hero />
         <Booking/>
+        <Steps />
+        <Models />
   </div>
    
   )
