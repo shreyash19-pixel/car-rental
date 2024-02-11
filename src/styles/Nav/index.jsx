@@ -4,8 +4,6 @@ import styled from "styled-components";
 export const NavBarWrap = styled.div`
     width: 100%;
     padding: 25px 30px;
-    position: relative;
-  
 
     @media (max-width: 768px)
     {
@@ -133,7 +131,7 @@ export const HeroBackgroundImgWrap = styled.div`
     position: absolute;
     right: 0px;
     top:0px;
-    z-index:  -1;
+    z-index:  0;
 
     @media (max-width: 800px)
     {

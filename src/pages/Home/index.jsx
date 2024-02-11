@@ -8,6 +8,7 @@ import Models from '../../views/Models'
 import Advertisement from '../../components/Advertisement'
 import About from '../../views/About'
 import Testimonial from '../../views/Testimonial'
+import FAQ from '../../views/FAQ'
 
 
 
@@ -18,7 +19,8 @@ const Home = () => {
 
 
   return (
-    <div style = {{backgroundColor: reserve ?  "rgba(0, 0, 0, 0.5)" : ""}}>
+    <div style = {{position : "relative",  backgroundColor: reserve ?  "rgba(0, 0, 0, 0.5)" : "", margin : "0 auto", maxWidth : "1350px"}}>
+        
         <Nav />
         <Hero />
         <Booking/>
@@ -27,6 +29,7 @@ const Home = () => {
         <Advertisement />
         <About />
         <Testimonial />
+        <FAQ />
   </div>
    
   )
