@@ -76,7 +76,7 @@ export const HeroLinksWrap = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
-    min-height: 80px;
+    min-height: 100px;
 
     @media (max-width: 450px)
     {
