@@ -37,7 +37,7 @@ export const Logo = styled.img`
 export const NavLinksWrap = styled.div`
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
 
     @media (max-width: 1000px)
     {

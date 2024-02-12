@@ -14,7 +14,7 @@ const Testimonial = () => {
     ]
 
   return (
-    <TestimonialContainer>
+    <TestimonialContainer id = "Testimonials">
         <TestimonialWrap>
             <StepsHeadingWrap>
                 <StepsHeading1>Reviewed by People</StepsHeading1>

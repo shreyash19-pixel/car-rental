@@ -8,7 +8,7 @@ import { SearchBtn } from '../../styles/Booking';
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id = "Contact">
         <FooterWrap>
             <FooterContent1>
                 <FooterContent1Heading>CAR <FooterContent1HeadingSpan>Rental</FooterContent1HeadingSpan></FooterContent1Heading>

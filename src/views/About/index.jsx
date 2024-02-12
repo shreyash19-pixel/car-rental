@@ -16,7 +16,7 @@ const About = () => {
     ]
 
   return (
-    <AboutContainer>
+    <AboutContainer id = "About">
         <AboutWrapper>
             <AboutCarsImgWrap>
                 <AboutCarsImg src = {AboutImg} />
