@@ -9,11 +9,29 @@ function App() {
 
   const [reserve, setReserve] = useState(false)
   const [confirm, setConfirm] = useState(false)
+  const [cars, setCar] = useState()
+  const [pickLoc, setPickLoc] = useState()
+  const [dropLoc, setDropLoc] = useState()
+  const [pickDate, setPickDate] = useState()
+  const [dropDate, setDropDate] = useState()
+  const [carNum, setCarNum] = useState(0)
   const shareData = {
     reserve, 
     setReserve,
     confirm, 
-    setConfirm
+    setConfirm,
+    cars, 
+    setCar,
+    pickLoc, 
+    setPickLoc,
+    dropLoc, 
+    setDropLoc,
+    pickDate, 
+    setPickDate,
+    dropDate, 
+    setDropDate,
+    carNum,
+    setCarNum
   }
 
   return (

@@ -9,6 +9,8 @@ import Advertisement from '../../components/Advertisement'
 import About from '../../views/About'
 import Testimonial from '../../views/Testimonial'
 import FAQ from '../../views/FAQ'
+import Mobile from '../../views/Mobile'
+import Footer from '../../components/Footer'
 
 
 
@@ -30,6 +32,8 @@ const Home = () => {
         <About />
         <Testimonial />
         <FAQ />
+        <Mobile />
+        <Footer />
   </div>
    
   )

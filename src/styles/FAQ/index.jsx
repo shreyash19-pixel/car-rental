@@ -68,23 +68,25 @@ export const Questions = styled.p`
 
 export const ShowAns = styled.div`
   font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: ${(props) => (props.isActive ? "rotate(180deg)" : "rotate(0deg)")};
+  animation: transform .4s ease;
 
-    @media (max-width: 520px)
-    {
-       font-size: 16px;
-    }
-`
+  @media (max-width: 520px) {
+    font-size: 16px;
+  }
+`;
+
 
 export const AnsWrap = styled.div`
     width: 100%;
     padding: ${(props) => (props.isActive ? '15px 40px' : '0px')}; /* Add padding only when active */
     color: grey;
     font-size: 14px;
-    transition: max-height 0.3s ease, padding 0.3s ease; /* Add transition for smooth animation */
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Add transition for smooth animation */
     max-height: ${(props) => (props.isActive ? '500px' : '0px')}; /* Adjust height accordingly */
     overflow: hidden;
 `;

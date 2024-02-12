@@ -3,8 +3,13 @@ import { CarInfoHeading, CarInfoHeadingSpan, CarInfoWrap, CheckInput, CrossWrap,
 import { RxCross2 } from "react-icons/rx";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
-import SelectedCar from '../../assets/hero-car-img.webp'
 import AppContext from "../../utils/AppContext";
+import AudiImg from '../../assets/audi.jpg'
+import VW from '../../assets/vw.jpg'
+import Camry from '../../assets/camry.jpg'
+import BMW from '../../assets/bmw.jpg'
+import Mercedes from '../../assets/mercedes.jpg'
+import VW_P from '../../assets/vw-passat.jpg'
 
 const Reservation = () => {
 
@@ -19,7 +24,17 @@ const Reservation = () => {
   const [city, setCity] = useState()
   const [zipCode, setZipCode] = useState();
 
-  const {setReserve,setConfirm} = useContext(AppContext);
+  const {setReserve,
+    setConfirm,
+    cars, 
+    pickLoc, 
+    dropLoc, 
+    pickDate, 
+    dropDate, 
+    carNum
+    } = useContext(AppContext);
+
+    const carType = [AudiImg,VW,Camry,BMW,Mercedes,VW_P]
 
   const handlePhoneNumberChange = (event) => {
     let numericValue = event.target.value.replace(/\D/g, ''); 
@@ -75,7 +90,7 @@ const Reservation = () => {
                 <PickLocWrap>
                   <PickLocHeadingWrap>Pick-up Date & Time</PickLocHeadingWrap>
                   <PickLoc>
-                    2024-02-09 /
+                    {pickDate} /
                   <PickTime onChange={(e) => setPicTime(e.target.value)} type = "time" />
                   </PickLoc>
                 </PickLocWrap>
@@ -87,9 +102,9 @@ const Reservation = () => {
                     <FaLocationDot />
                 </LocationIconWrap>
                 <PickLocWrap>
-                  <PickLocHeadingWrap>Pick-up Date & Time</PickLocHeadingWrap>
+                  <PickLocHeadingWrap>Drop-of Date & Time</PickLocHeadingWrap>
                   <PickLoc>
-                    2024-02-09 / 
+                    {dropDate} / 
                     <PickTime onChange={(e) => setDropTime(e.target.value)} type = "time" />
                   </PickLoc>
                 </PickLocWrap>
@@ -101,8 +116,8 @@ const Reservation = () => {
                     <FaLocationDot />
                 </LocationIconWrap>
                 <PickLocWrap>
-                  <PickLocHeadingWrap>Pick-up Date & Time</PickLocHeadingWrap>
-                  <PickLoc>Banglore</PickLoc>
+                  <PickLocHeadingWrap>Pick-up Location</PickLocHeadingWrap>
+                  <PickLoc>{pickLoc}</PickLoc>
                 </PickLocWrap>
               </ReservationDetails>
             </ReservationDetailsWrap>
@@ -112,18 +127,18 @@ const Reservation = () => {
                     <FaLocationDot />
                 </LocationIconWrap>
                 <PickLocWrap>
-                  <PickLocHeadingWrap>Pick-up Date & Time</PickLocHeadingWrap>
-                  <PickLoc>Banglore</PickLoc>
+                  <PickLocHeadingWrap>Drop-of Location</PickLocHeadingWrap>
+                  <PickLoc>{dropLoc}</PickLoc>
                 </PickLocWrap>
               </ReservationDetails>
             </ReservationDetailsWrap>
           </ExistingInfo>
           <CarInfoWrap>
           <CarInfoHeading>
-            Car - <CarInfoHeadingSpan>Audi A1 S-Line</CarInfoHeadingSpan>
+            Car - <CarInfoHeadingSpan>{cars}</CarInfoHeadingSpan>
           </CarInfoHeading>
           <SelectedCarWrap>
-            <SelectedCarImg src = {SelectedCar} />
+            <SelectedCarImg src = {carType[carNum]} />
           </SelectedCarWrap>
         </CarInfoWrap>
         </ExistingInfoWrap>

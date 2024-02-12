@@ -37,7 +37,7 @@ const FAQ = () => {
                             <QuestionContainer key={index}>
                                 <QuestionWrap isActive={activeFaq === index} onClick={() => handleFaq(index)}>
                                     <Questions>{ques.questions}</Questions>
-                                    <ShowAns>
+                                    <ShowAns isActive={activeFaq === index}>
                                         <FaAngleDown />
                                     </ShowAns>
                                 </QuestionWrap>

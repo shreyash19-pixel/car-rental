@@ -1,8 +1,9 @@
-import React from 'react'
-import { StepsContainer, StepsHeading1, StepsHeading2, StepsHeadingWrap, StepsInfoContainer, StepsInfoDesc, StepsInfoDescTitle, StepsInfoDescWrap, StepsInfoImg, StepsInfoImgWrap, StepsInfoWrap, StepsWrap } from '../../styles/Steps'
+import React, {useState, useEffect} from 'react'
+import { StepsContainer, StepsHeading1, StepsHeading2, StepsHeadingWrap, StepsInfoContainer, StepsInfoDesc, StepsInfoDescTitle, StepsInfoDescWrap, StepsInfoImg, StepsInfoImgWrap, StepsInfoWrap, StepsWrap, StyledNavigator } from '../../styles/Steps'
 import Step1 from '../../assets/steps-1.png'
 import Step2 from '../../assets/steps-2.png'
 import Step3 from '../../assets/steps-3.png'
+import { IoArrowUp } from "react-icons/io5";
 
 const Steps = () => {
 
@@ -11,6 +12,32 @@ const Steps = () => {
         {img : Step2, title : "Contact Operator", desc : "Our knowledgeable and friendly operators are always ready to help with any questions or concerns"},
         {img : Step3, title : "Let's Drive", desc : "Whether you're hitting the open road, we've got you covered with our wide range of cars"},
     ]
+
+    const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) { // Change 200 to your desired scroll position
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+    
 
   return (
     <StepsContainer>
@@ -37,6 +64,9 @@ const Steps = () => {
                 ))}
             </StepsInfoWrap>
         </StepsWrap>
+        <StyledNavigator isVisible={isVisible} onClick={scrollToTop}>
+            <IoArrowUp />
+        </StyledNavigator>
     </StepsContainer>
   )
 }

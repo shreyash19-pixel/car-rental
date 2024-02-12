@@ -18,6 +18,7 @@ const Booking = () => {
         {title : "VW Passat CC"},
     ]
 
+
     const location = [
         {title : "Mumbai"},
         {title : "Pune"},
@@ -39,20 +40,53 @@ const Booking = () => {
         return currentDate
     }
 
-    const [cars, setCar] = useState()
-    const [pickLoc, setPickLoc] = useState()
-    const [dropLoc, setDropLoc] = useState()
-    const [pickDate, setPickDate] = useState()
-    const [dropDate, setDropDate] = useState()
     const [isEmpty, setIsEmpty] = useState(false)
-    const {reserve,setReserve,confirm} = useContext(AppContext);
+    const {reserve,
+        setReserve,
+        confirm,
+        cars, 
+        setCar,
+        pickLoc, 
+        setPickLoc,
+        dropLoc, 
+        setDropLoc,
+        pickDate, 
+        setPickDate,
+        dropDate, 
+        setDropDate,   
+        setCarNum 
+        } = useContext(AppContext);
     reserve?document.body.style.overflow="hidden":document.body.style.overflow="auto";
     
 
     const handleCarInfo = () => {
         if(cars!= null && pickLoc!= null && dropLoc!= null && pickDate!= null && dropDate!= null)
         {
-           setReserve(true)
+            switch(cars)
+            {
+                case "Audi A1S-Line":
+                    setCarNum(0)
+                    break;
+                case "VW Golf 6":
+                    setCarNum(1)
+                    break;
+                case "Toyota Camry":
+                    setCarNum(2)
+                    break;
+                case "BMW 320 ModernLine":
+                    setCarNum(3)
+                    break;
+                case "Mercedes-Benz GLK":
+                    setCarNum(4)
+                    break;
+                case "VW Passat CC":
+                    setCarNum(5)
+                    break;
+                default:
+                    setCarNum(null)
+            }
+
+            setReserve(true)
         }
         else
         {
@@ -108,7 +142,7 @@ const Booking = () => {
                         <CarTypeOption disabled value="" selected>
                             Select your car type
                         </CarTypeOption>
-                        {carType.map((car) => (
+                        {carType.map((car,index) => (
                         <CarTypeOption>
                             {car.title}
                         </CarTypeOption>

@@ -34,9 +34,8 @@ export const StepsHeading1 = styled.h2`
         }
 `
 
-export const StepsHeading2 = styled.h1`
+export const StepsHeading2 = styled.h2`
     font-size: 45px;
-    line-height: 1;
     @media (max-width: 420px)
         {
             font-size: 30px;;
@@ -95,3 +94,18 @@ export const StepsInfoDesc = styled.p`
     color: grey;
     text-align: center;
 `
+
+export const StyledNavigator = styled.div`
+ position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6C22A6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: ${props => props.isVisible ? '1' : '0'};
+  pointer-events: ${props => props.isVisible ? 'auto' : 'none'};
+  transition: opacity 0.3s ease-in-out;
+  font-size: 20px;
+`;
