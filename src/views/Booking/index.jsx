@@ -99,7 +99,7 @@ const Booking = () => {
     }
 
   return (
-    <BookingContainer>
+    <BookingContainer id = "Booking">
         <BookingWrap>
             <BookingHeading>Book a car</BookingHeading>
             {

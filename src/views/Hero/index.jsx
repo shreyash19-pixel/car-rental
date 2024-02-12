@@ -5,7 +5,7 @@ import HeroCarImg from '../../assets/hero-car-img.webp'
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id = "Home">
         <HeroWrap>
             <HeroInfoWrap>
                 <PlanTrip>Plan your trip now</PlanTrip>
@@ -16,7 +16,7 @@ const Hero = () => {
                     <HeroDesc>Rent the car of your dreams. Unbeatable prices, unlimited mile, flexible pick-up options and much more.</HeroDesc>
                 </HeroDescWrap>
                 <HeroLinksWrap>
-                    <HeroLinks book = "true" href = "#">
+                    <HeroLinks book = "true" href = "#Booking">
                         Book Ride
                     </HeroLinks>
                     <HeroLinks href = "#">

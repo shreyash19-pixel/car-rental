@@ -144,6 +144,12 @@ export const SearchBtn = styled.div`
     font-size: 18px;
     box-shadow: 0 10px 15px #c496e7;
     cursor: pointer;
+
+    &:hover
+    {
+        box-shadow: 0 10px 15px rgb(176, 93, 240);
+        transition: all .5s ease;
+    }
 `
 
 export const DateInput = styled.input`

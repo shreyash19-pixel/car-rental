@@ -139,7 +139,8 @@ export const CarInfo2 = styled(CarInfo1)`
     border-left: 2px solid grey;
 `
 
-export const ReserveNow = styled.div`
+export const ReserveNow = styled.a`
+    text-decoration: none;
     width: 100%;
     background-color: #6C22A6;
     color: white;
@@ -149,6 +150,12 @@ export const ReserveNow = styled.div`
     text-align: center;
     cursor: pointer;
     box-shadow: 0 10px 15px #c496e7;
+
+    &:hover
+    {
+        box-shadow: 0 10px 15px rgb(176, 93, 240);
+        transition: all .5s ease;
+    }
 
     @media (max-width: 700px)
     {

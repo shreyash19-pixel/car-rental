@@ -76,6 +76,7 @@ export const HeroLinksWrap = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    min-height: 80px;
 
     @media (max-width: 450px)
     {
@@ -93,6 +94,14 @@ export const HeroLinks = styled.a`
     border-radius: 5px;
     font-size: 18px;
     box-shadow:  ${(props) => (props.book ? "0 10px 15px #c496e7;" : "none")}; 
+
+    &:hover{
+        background-color: ${(props) => (props.book ? "0 10px 15px #6C22A6" : "transparent")}; 
+        color: ${(props) => (props.book ? "white" : "black")};
+        border: 1px solid black;
+        box-shadow:  ${(props) => (props.book ? "0 10px 15px rgb(176, 93, 240);" : "none")}; 
+        transition: all .5s ease;
+    }
 
     @media (max-width: 450px)
     {

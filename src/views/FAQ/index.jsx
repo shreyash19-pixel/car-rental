@@ -13,7 +13,7 @@ const FAQ = () => {
         { questions: "3. How do I find such low rental car prices?", answers: "Book in advance: Booking your rental car ahead of time can often result in lower prices. Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes result in lower prices." }
     ]
 
-    const [activeFaq, setActiveFaq] = useState(null)
+    const [activeFaq, setActiveFaq] = useState(0)
 
     const handleFaq = (index) => {
         setActiveFaq(activeFaq === index ? null : index);

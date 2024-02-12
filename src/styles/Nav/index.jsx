@@ -77,6 +77,12 @@ export const SignUpWrap = styled.a`
     border-radius: ${(props) => (props.register ? "5px" : "0px")};
     font-weight: 500;
     box-shadow:  ${(props) => (props.register ? "0 10px 15px #c496e7;" : "none")}; 
+
+    &:hover
+    {
+        box-shadow:  ${(props) => (props.register ? "0 10px 15px rgb(176, 93, 240);" : "none")}; 
+        transition: all .5s ease;
+    }
 `
 
 export const Hamburger = styled.div`

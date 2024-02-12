@@ -34,7 +34,7 @@ const About = () => {
                             so don't miss out on your chance to save big.
                         </ChooseDesc>
                         <ChooseUsLinksWrap>
-                            <HeroLinks href = "#" book>Find Details</HeroLinks>
+                            <HeroLinks href = "#Home" book>Find Details</HeroLinks>
                         </ChooseUsLinksWrap>  
                     </ChooseUsHeadingWrap>
                 </ChooseUsWrap>

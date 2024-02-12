@@ -137,7 +137,7 @@ const Models = () => {
                       ))}
                     </CarAllInfoWrap>
                   </ModelsDetails>
-                  <ReserveNow>RESERVE NOW</ReserveNow>
+                  <ReserveNow href = "#Booking">RESERVE NOW</ReserveNow>
                 </ModelsDetailsWrap>
               </ModelImgAndDetailsWrap>
             </ViewCarsWrap>
