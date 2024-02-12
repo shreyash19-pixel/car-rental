@@ -74,6 +74,11 @@ export const ModelImgWrap = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
+    
+    @media (max-width: 700px)
+    {
+        min-height: 300px;
+    }
 `
 
 export const ModelImg = styled.img`
