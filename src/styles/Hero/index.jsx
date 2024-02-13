@@ -98,7 +98,7 @@ export const HeroLinks = styled.a`
     &:hover{
         background-color: ${(props) => (props.book ? "0 10px 15px #6C22A6" : "transparent")}; 
         color: ${(props) => (props.book ? "white" : "black")};
-        border: 1px solid black;
+        border: ${(props) => (props.book ? "none" : "1px solid black")};
         box-shadow:  ${(props) => (props.book ? "0 10px 15px rgb(176, 93, 240);" : "none")}; 
         transition: all .5s ease;
     }

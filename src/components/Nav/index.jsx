@@ -43,7 +43,7 @@ const Nav = () => {
             <Hamburger onClick={() => setNav(!nav)}>
                 <GiHamburgerMenu />
             </Hamburger>
-            {nav && (<ResponsiveNav>
+            {nav && (<ResponsiveNav responsive = {nav}>
                 {navLinks.map((links) => (
                     <NavLinks onClick={handleOverflow} href = {links.link}>{links.title}</NavLinks>
                     ))}

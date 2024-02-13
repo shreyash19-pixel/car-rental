@@ -126,10 +126,19 @@ export const ResponsiveNav = styled.div`
         background-color: white;
         position: absolute;
         top: 0;
-        left:0;
+        left: ${(props) => (props.responsive ? "0px" : "-100px")};
+        animation : left .8s ease-out;
         font-size: 22px;
         z-index: 99999;
 
+        @keyframes left {
+        from {
+            left: -1000px;
+        }
+        to {
+            left: 0px;
+        }
+        }
     }
 `
 
