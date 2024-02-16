@@ -48,11 +48,12 @@ export const NavLinksWrap = styled.div`
 export const NavLinks = styled.a`
     color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
 
     &:hover{
         color: #6C22A6;
+        transition: all .4s ease-in-out;
     }
 
     @media (max-width: 1000px)
