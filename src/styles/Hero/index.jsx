@@ -43,7 +43,7 @@ export const HeroHeading = styled.h1`
     font-size: 55px;
     line-height: 1;
 
-    @media (max-width: 420px)
+    @media (max-width: 480px)
     {
        font-size: 40px;
     }
