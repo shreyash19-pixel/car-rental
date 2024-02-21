@@ -131,16 +131,17 @@ export const ResponsiveNav = styled.div`
         background-color: white;
         position: absolute;
         top: 0;
-        animation : left .8s ease-out;
+        left:0px;
+        animation : left .4s ease-out;
         font-size: 22px;
         z-index: 99999;
 
         @keyframes left {
         from {
-            left: -1000px;
+            transform: translate(-100%);
         }
         to {
-            left: 0px;
+            transform: translate(0);
         }
         }
     }
